@@ -25,10 +25,11 @@ public class OrderController {
     }
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/viewAllOrderDetails")
-    public List<Order> getAllOrder(){
+    public List<Order> getAllOrder() {
         return orderService.getAllOrder();
 
     }
+
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/getViewById/{id}")
      public Order getOrderById(@PathVariable("id") Long id){
